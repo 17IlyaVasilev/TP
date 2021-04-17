@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(task3)
-
 
 if (ARM_BUILD)
 
