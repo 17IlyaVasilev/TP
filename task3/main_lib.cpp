@@ -1,16 +1,17 @@
 #include <iostream>
-#include <buf.h>
+
+#include <buffer.h>
 
 
 using namespace std;
 
 
 int main() {
-    Buf buf;
+    CBuffer temp_buffer;
 
-    buf.setter("Variable");
+    temp_buffer.setter("Variable");
 
-    cout << buf.getter();
+    cout << temp_buffer.getter();
     cout << '\n';
 
     return 0;

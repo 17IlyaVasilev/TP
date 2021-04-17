@@ -6,7 +6,7 @@ using namespace std;
 
 
 int main() {
-    string HW = "Hello World";
+    std::string HW = "Hello World";
 
     cout << HW;
     cout << '\n';

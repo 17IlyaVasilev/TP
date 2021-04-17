@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 
 project(task3)
 
@@ -11,10 +11,11 @@ if (ARM_BUILD)
 
 endif(ARM_BUILD)
 
+project(SimpleLibrary)
 
 include_directories(${SimpleLibrary_SOURCE_DIR}/include)
 
-install(FILES ${SimpleLibrary_SOURCE_DIR}/include/buf.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
+install(FILES ${SimpleLibrary_SOURCE_DIR}/include/buffer.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
 
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${SimpleLibrary_SOURCE_DIR}/bin)
