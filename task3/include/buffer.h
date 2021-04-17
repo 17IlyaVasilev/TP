@@ -1,17 +1,10 @@
 #pragma once
 
-#include <iostream>
 #include <string>
-
-
-using namespace std;
-
-
-class CBuffer {
- private:
-     std::string str;
-
+class Buffer {
  public:
-     void setter(const std::string&);
-     std::string getter() const;
+    void Set(const std::string& string);
+    std::string Get() const;
+ private:
+    std::string string_;
 };

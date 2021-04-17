@@ -1,10 +1,9 @@
 #include <buffer.h>
 
-
-void CBuffer::setter(const std::string& temp_str) {
-    str = temp_str;
+void Buffer::Set(const std::string& string) {
+    string_ = string;
 }
 
-std::string CBuffer::getter() const {
-    return str;
+std::string Buffer::Get() const {
+    return string_;
 }

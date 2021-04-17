@@ -1,18 +1,10 @@
-#include <iostream>
-
 #include <buffer.h>
 
-
-using namespace std;
-
+#include <iostream>
 
 int main() {
-    CBuffer temp_buffer;
-
-    temp_buffer.setter("Variable");
-
-    cout << temp_buffer.getter();
-    cout << '\n';
-
+    Buffer buffer;
+    buffer.Set("Variable");
+    std::cout << buffer.Get() << std::endl;
     return 0;
 }
