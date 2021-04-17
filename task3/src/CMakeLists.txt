@@ -1,4 +1,4 @@
 
-add_library(buf SHARED buf.cpp)
+add_library(buffer SHARED buf.cpp)
 
-install(TARGETS buf LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
+install(TARGETS buffer LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
